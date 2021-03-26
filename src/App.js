@@ -20,7 +20,7 @@ function App() {
 
   useEffect(()=>{
     async function getData(){
-      const res = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${full}&days=1&aqi=no&alerts=no`);
+      const res = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${full}&days=1&aqi=no&alerts=no`);
       setName(res.data);      
       console.log(res.data)
     }
